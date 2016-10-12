@@ -8,13 +8,13 @@ import { HeroDetailComponent } from './hero-detail.component';
 import { HeroesComponent }     from './heroes.component';
 import { HeroService }         from './hero.service';
 
-import { routing }             from './app.routing';
+import { AppRoutingModule }     from './app-routing.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    routing
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,

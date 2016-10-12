@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HeroesComponent }      from './heroes.component';
 import { DashboardComponent }   from './dashboard.component';
 
+import { HeroDetailComponent }  from './hero-detail.component';
+
 const appRoutes: Routes = [
   {
     path: 'heroes',
@@ -18,6 +20,10 @@ const appRoutes: Routes = [
     redirectTo: '/dashboard',
     pathMatch: 'full'
   },
+  {
+    path: 'detail/:id',
+    component: HeroDetailComponent
+  }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
