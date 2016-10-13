@@ -4,4 +4,5 @@
 Para rodar o APP
 
 $ npm install
+
 $ npm start
